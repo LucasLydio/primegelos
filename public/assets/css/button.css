@@ -1,0 +1,72 @@
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px; 
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: inherit;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out; 
+}
+
+
+.button {
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background-color: var(--text-primary);
+  color: var(--btn-white);
+  border-color: var(--text-primary);
+}
+
+.btn--primary:hover {
+  background-color: var(--text-secondary);
+  border-color: var(--text-secondary);
+}
+
+
+.btn--blue {
+  background-color: var(--btn-blue);
+  color: var(--btn-white);
+  border-color: var(--btn-blue);
+}
+
+.btn--blue:hover {
+  background-color: var(--btn-blue-hover);
+  border-color: var(--btn-blue-hover);
+}
+
+/* 3. Light (Fundo claro com borda sutil) */
+.btn--light {
+  background-color: var(--btn-white);
+  color: var(--text-primary);
+  border-color: #e2e8f0; /* Borda cinza bem clara */
+}
+
+.btn--light:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+/* 4. Ghost (Sem fundo, cor de texto sutil que escurece no hover) */
+.btn-ghost {
+  background-color: transparent;
+  color: var(--text-secondary);
+}
+
+.btn-ghost:hover {
+  background-color: #f1f5f9; /* Fundo bem claro no hover */
+  color: var(--text-primary);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}

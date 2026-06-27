@@ -1,0 +1,126 @@
+:root {
+  margin: 0;
+
+  --font: "MontSerrat", "Cause", cursive,
+  Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Snowy whites and very pale blues */
+  --bg-base: #efefef;
+  --bg-white: #fff;
+  --bg-surface: #f0fdf4;
+  --bg-surface2: #e0f2fe; 
+  --bg-overlay: #f8fafca5;
+  --bg-blue: #0056b3; 
+  --bg-blue-hover: #004494;
+
+  /* Deep slate and navy for readable text on light ice */
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;/* Cores base para os botões */
+
+  --btn-white: #fff;
+  --btn-blue: #0056b3; 
+  --btn-blue-hover: #004494;
+
+  --border-light: rgba(103, 104, 104, 0.219);
+  --border-medium: rgba(69, 69, 69, 0.218);
+  --border-dark: rgba(65, 65, 65, 0.4);
+
+  --border-sm: 0.2rem;
+  --border-md: 0.4rem;
+  --border-lg: 0.6rem;
+
+  --padding-sm: 0.4rem;
+  --padding-md: 0.8rem;
+  --padding-lg: 1.2rem;
+
+  --gap-sm: 0.4rem;
+  --gap-md: 0.8rem;
+  --gap-lg: 1.2rem;
+
+  --fw-sm: 450;
+  --fw-md: 550;
+  --fw-lg: 700;
+
+  --margin-sm: 1.4rem;
+  --margin-md: 1.8rem;
+  --margin-lg: 2.2rem;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.16);
+
+  --font-size-h1: clamp(1.75rem, 2vw + 1rem, 2.1rem);
+  --font-size-h2: clamp(1.5rem, 1.8vw + 0.75rem, 1.85rem);
+  --font-size-h3: clamp(1.25rem, 1.5vw + 0.6rem, 1.5rem);
+  --font-size-h4: clamp(1.1rem, 1.2vw + 0.5rem, 1.25rem);
+  --font-size-h5: clamp(1rem, 1vw + 0.4rem, 1.1rem);
+  --font-size-h6: clamp(0.9rem, 0.8vw + 0.4rem, 1rem);
+
+  --font-size-body: clamp(0.875rem, 0.9vw + 0.3rem, 1rem);
+  
+  --font-size-ui: clamp(0.9rem, 0.8vw + 0.2rem, 0.9rem);
+  
+  --font-size-small: clamp(0.7rem, 0.7vw + 0.2rem, 0.75rem);
+}
+
+/* ==========================================================================
+   Element Application
+   ========================================================================== */
+
+/* Headings */
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+h5 { font-size: var(--font-size-h5); }
+h6 { font-size: var(--font-size-h6); }
+
+/* Remove default browser margins for tighter DAW grid control */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Standard Body Text */
+p, article {
+  font-size: var(--font-size-body);
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 1rem;  
+  color: var(--text-muted);
+}
+
+a, span {
+  color: var(--text-secondary);
+}
+
+/* Interactive UI & Form Elements */
+button, 
+input, 
+select, 
+textarea, 
+a {
+  font-size: var(--font-size-ui);
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+
+/* Ensure inputs don't inherit weird browser OS defaults */
+button, 
+input, 
+select, 
+textarea {
+  font-family: inherit; /* Inherits the studio font (e.g., Inter, Roboto) */
+}
+
+/* Micro-copy */
+small {
+  font-size: var(--font-size-small);
+  line-height: 1.1;
+  font-weight: 400;
+}

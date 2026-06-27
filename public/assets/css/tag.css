@@ -1,0 +1,5 @@
+.carousel {
+    background-color: var(--bg-white);
+    width: fit-content;
+    margin: 0 auto;
+}

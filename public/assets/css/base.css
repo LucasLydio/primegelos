@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg-base) !important;
+  color: var(--text-primary);
+
+  a {
+      text-decoration: none;
+  }
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1300px;
+  min-height: 80vh;
+  position: relative;
+  padding-top: var(--padding-md);
+  @media (max-width: 1260px) {
+      padding-inline: var(--padding-md);
+  }
+}
+
+.muted {
+  color: var(--text-muted);
+}
