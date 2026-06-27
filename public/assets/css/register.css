@@ -1,0 +1,26 @@
+/* ========================================== */
+/* CUSTOM MODAL ELEMENTS                      */
+/* ========================================== */
+
+/* Garante que a imagem preencha todo o lado esquerdo sem distorcer */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* Estilo interativo para os botões de escolha de conta */
+.btn-account-option {
+    transition: all 0.2s ease-in-out;
+    border-color: #e2e8f0 !important;
+}
+
+/* Efeito de hover: Sobe um pouco o card, adiciona sombra e muda a borda para azul */
+.btn-account-option:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-color: var(--btn-blue) !important;
+    background-color: #f8fafc !important;
+}
+
+.btn-account-option:active {
+    transform: translateY(0);
+}

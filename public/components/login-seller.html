@@ -1,0 +1,51 @@
+<div class="modal fade" id="modalLoginVendedor" tabindex="-1" aria-labelledby="modalLoginVendedorLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg overflow-hidden">
+            <div class="row g-0">
+                
+                <div class="col-md-5 position-relative bg-dark d-none d-md-block">
+                    <img src="./assets/img/webp/man.webp" alt="Parceiro Prime Gelos" class="w-100 h-100 object-fit-cover opacity-75">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4 p-lg-5" style="background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);">
+                        <h3 class="text-white fw-bold mb-2">Painel do Parceiro</h3>
+                        <p class="text-light opacity-75 small mb-0">
+                            Acesse seu painel para lançar novas vendas, acompanhar status de entregas e conferir suas comissões do mês.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-7 bg-white p-4 p-lg-5">
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div>
+                            <span class="badge bg-dark bg-opacity-10 text-dark mb-1"><i class="bi bi-briefcase-fill me-1"></i> Parceiro Prime</span>
+                            <h2 class="h4 fw-bold text-dark mb-0" id="modalLoginVendedorLabel">Acesso Restrito</h2>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="emailVendedor" class="form-label small fw-medium text-secondary">E-mail corporativo ou CPF</label>
+                            <input type="text" class="form-control form-control-lg fs-6" id="emailVendedor" placeholder="Digite seu acesso" required>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <label for="senhaVendedor" class="form-label small fw-medium text-secondary mb-0">Senha de Acesso</label>
+                                <a href="#" class="small text-primary text-decoration-none">Redefinir senha</a>
+                            </div>
+                            <input type="password" class="form-control form-control-lg fs-6 mt-1" id="senhaVendedor" placeholder="••••••••" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 py-3 rounded-3 mb-3">Acessar Meu Painel</button>
+                    </form>
+
+                    <div class="text-center mt-3">
+                        <p class="small text-muted mb-0">
+                            Deseja ser um parceiro? <a href="#" class="text-dark fw-bold text-decoration-none">Saiba mais</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,29 @@
-<aside>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileSidebar" aria-labelledby="mobileSidebarLabel">
     
-</aside>
+    <div class="offcanvas-header border-bottom px-4 py-3">
+        <h5 class="offcanvas-title fw-bold text-dark d-flex align-items-center gap-2" id="mobileSidebarLabel">
+            <i class="bi bi-snow2 text-primary"></i> Prime Gelos
+        </h5>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+    </div>
+
+    <div class="offcanvas-body d-flex flex-column px-4 py-4">
+        
+        <nav class="nav flex-column gap-4 mb-auto">
+            <a href="#" class="text-dark text-decoration-none fw-medium fs-5 nav-link-hover">Início</a>
+            <a href="#" class="text-dark text-decoration-none fw-medium fs-5 nav-link-hover">Sobre</a>
+            <a href="#" class="text-dark text-decoration-none fw-medium fs-5 nav-link-hover">Serviços</a>
+            <a href="#" class="text-dark text-decoration-none fw-medium fs-5 nav-link-hover">Contato</a>
+        </nav>
+
+        <div class="d-grid gap-3 mt-5 pt-3 border-top">
+            <button class="button btn--light py-3 rounded-pill fw-medium" data-bs-toggle="modal" data-bs-target="#modalEscolherLogin" data-bs-dismiss="offcanvas">
+                Entrar
+            </button>
+            <button class="btn btn-blue py-3 rounded-pill fw-medium shadow-sm" data-bs-toggle="modal" data-bs-target="#modalCriarConta" data-bs-dismiss="offcanvas">
+                Criar Conta
+            </button>
+        </div>
+        
+    </div>
+</div>

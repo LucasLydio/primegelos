@@ -1,0 +1,73 @@
+
+<div class="modal fade" id="modalCriarContaVendedor" tabindex="-1" aria-labelledby="modalCriarContaVendedorLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg overflow-hidden">
+            <div class="row g-0">
+                
+                <!-- Lado Esquerdo -->
+                <div class="col-md-5 position-relative bg-dark d-none d-md-block">
+                    <img src="/assets/img/webp/man.webp" alt="Parceiro Prime" class="w-100 h-100 object-fit-cover opacity-75">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4 p-lg-5" style="background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);">
+                        <h3 class="text-white fw-bold mb-2">Seja um Parceiro!</h3>
+                        <p class="text-light opacity-75 small mb-0">
+                            Cadastre-se para gerenciar sua carteira de clientes, lançar pedidos e acompanhar suas comissões em tempo real.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Lado Direito: Formulário -->
+                <div class="col-md-7 bg-white p-4 p-lg-5">
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="h4 fw-bold text-dark mb-0" id="modalCriarContaVendedorLabel">Cadastro de Vendedor</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+
+                    <form>
+                        <!-- Nome -->
+                        <div class="mb-3">
+                            <label for="nomeVendedor" class="form-label small fw-medium text-secondary">Nome Completo</label>
+                            <input type="text" class="form-control" id="nomeVendedor" required>
+                        </div>
+                        
+                        <!-- CPF e Email -->
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="cpfVendedor" class="form-label small fw-medium text-secondary">CPF ou CNPJ</label>
+                                <input type="text" class="form-control" id="cpfVendedor" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="emailRegVendedor" class="form-label small fw-medium text-secondary">E-mail Profissional</label>
+                                <input type="email" class="form-control" id="emailRegVendedor" required>
+                            </div>
+                        </div>
+
+                        <!-- Código de Aprovação (O Diferencial de Segurança) -->
+                        <div class="mb-3 p-3 bg-light border rounded-3 border-primary-subtle">
+                            <label for="codigoAprovacao" class="form-label small fw-bold text-primary d-flex align-items-center gap-2">
+                                <i class="bi bi-shield-lock-fill"></i> Código de Autorização
+                            </label>
+                            <input type="text" class="form-control border-primary text-uppercase" id="codigoAprovacao" placeholder="Ex: PRIME-2026-XYZ" required>
+                            <div class="form-text small opacity-75">Insira o código de convite fornecido pela administração.</div>
+                        </div>
+
+                        <!-- Senhas -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <label for="senhaRegVendedor" class="form-label small fw-medium text-secondary">Senha</label>
+                                <input type="password" class="form-control" id="senhaRegVendedor" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="senhaConfVendedor" class="form-label small fw-medium text-secondary">Confirmar Senha</label>
+                                <input type="password" class="form-control" id="senhaConfVendedor" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark w-100 py-3 rounded-3">Solicitar Cadastro de Parceiro</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

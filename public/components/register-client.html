@@ -1,0 +1,72 @@
+
+<div class="modal fade" id="modalCriarContaCliente" tabindex="-1" aria-labelledby="modalCriarContaClienteLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg overflow-hidden">
+            <div class="row g-0">
+                
+                <!-- Lado Esquerdo -->
+                <div class="col-md-5 position-relative bg-dark d-none d-md-block">
+                    <img src="/assets/img/webp/ice05.webp" alt="Área do Cliente" class="w-100 h-100 object-fit-cover opacity-75">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4 p-lg-5" style="background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);">
+                        <h3 class="text-white fw-bold mb-2">Seja Cliente Prime!</h3>
+                        <p class="text-light opacity-75 small mb-0">
+                            Preencha seus dados para começar a pedir gelo com a melhor qualidade e agilidade de Goiânia.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Lado Direito: Formulário -->
+                <div class="col-md-7 bg-white p-4 p-lg-5">
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="h4 fw-bold text-dark mb-0" id="modalCriarContaClienteLabel">Cadastro de Cliente</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+
+                    <form>
+                        <!-- Nome -->
+                        <div class="mb-3">
+                            <label for="nomeCliente" class="form-label small fw-medium text-secondary">Nome Completo ou Razão Social</label>
+                            <input type="text" class="form-control" id="nomeCliente" required>
+                        </div>
+                        
+                        <!-- CPF / CNPJ e Email -->
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="docCliente" class="form-label small fw-medium text-secondary">CPF ou CNPJ</label>
+                                <input type="text" class="form-control" id="docCliente" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="emailRegCliente" class="form-label small fw-medium text-secondary">E-mail</label>
+                                <input type="email" class="form-control" id="emailRegCliente" required>
+                            </div>
+                        </div>
+
+                        <!-- Vendedor que indicou (Opcional) -->
+                        <div class="mb-3">
+                            <label for="indicacaoVendedor" class="form-label small fw-medium text-secondary">
+                                E-mail do Vendedor / Código <span class="text-muted fw-normal">(Opcional)</span>
+                            </label>
+                            <input type="text" class="form-control" id="indicacaoVendedor" placeholder="Alguém te indicou?">
+                        </div>
+
+                        <!-- Senhas -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <label for="senhaRegCliente" class="form-label small fw-medium text-secondary">Senha</label>
+                                <input type="password" class="form-control" id="senhaRegCliente" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="senhaConfCliente" class="form-label small fw-medium text-secondary">Confirmar Senha</label>
+                                <input type="password" class="form-control" id="senhaConfCliente" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-blue w-100 py-3 rounded-3">Criar minha conta</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
