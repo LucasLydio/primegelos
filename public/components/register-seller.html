@@ -1,9 +1,10 @@
-
 <div class="modal fade overflow-y-auto" id="modalCriarContaVendedor" tabindex="-1" aria-labelledby="modalCriarContaVendedorLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-lg-down ">
-        <div class="modal-content border-0 shadow-lg ">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-lg-down">
+        <div class="modal-content border-0 shadow-lg">
             <div class="row g-0 h-100">
-                <div class="col-md-6 position-relative bg-dark d-md-block h-md-100">
+                
+                <!-- Imagem lateral: Escondida no mobile (d-none) e visível a partir do desktop (d-md-block) -->
+                <div class="col-md-6 position-relative bg-dark d-none d-md-block h-md-100">
                     <img src="/assets/img/webp/man.webp" alt="Parceiro Prime" class="w-100 h-100 object-fit-cover opacity-75">
                     <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4 p-lg-5" style="background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);">
                         <h3 class="text-white fw-bold mb-2">Seja um Parceiro!</h3>
@@ -13,6 +14,7 @@
                     </div>
                 </div>
 
+                <!-- Formulário -->
                 <div class="col-md-6 bg-white p-4 p-lg-4 h-md-100 d-flex flex-column justify-content-center">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <h2 class="h4 fw-bold text-dark mb-0" id="modalCriarContaVendedorLabel">Cadastro de Vendedor</h2>
@@ -23,27 +25,51 @@
                         <!-- Nome -->
                         <div class="mb-3">
                             <label for="nomeVendedor" class="form-label small fw-medium text-secondary">Nome Completo</label>
-                            <input type="text" class="form-control" id="nomeVendedor" required>
+                            <input type="text" class="form-control" id="nomeVendedor" maxlength="100" required>
                         </div>
                         
-                        <!-- CPF e Email -->
-                        <div class="row g-3 mb-3">
-                            <div class="col-md-6">
-                                <label for="cpfVendedor" class="form-label small fw-medium text-secondary">CPF ou CNPJ</label>
-                                <input type="text" class="form-control" id="cpfVendedor" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="emailRegVendedor" class="form-label small fw-medium text-secondary">E-mail Profissional</label>
-                                <input type="email" class="form-control" id="emailRegVendedor" required>
+                        <!-- Seleção do Documento -->
+                        <div class="mb-3">
+                            <label class="form-label small fw-medium text-secondary d-block mb-2">Tipo de Documento</label>
+                            <div class="d-flex gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="tipoDocumento" id="radioCPF" value="cpf" checked>
+                                    <label class="form-check-label small" for="radioCPF">Pessoa Física (CPF)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="tipoDocumento" id="radioCNPJ" value="cnpj">
+                                    <label class="form-check-label small" for="radioCNPJ">Pessoa Jurídica (CNPJ)</label>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Código de Aprovação (O Diferencial de Segurança) -->
+                        <!-- Campos de Documento Dinâmicos -->
+                        <div class="mb-3">
+                            <div id="divCPF">
+                                <label for="cpfVendedor" class="form-label small fw-medium text-secondary">CPF</label>
+                                <input type="text" class="form-control" id="cpfVendedor" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="100" required>
+                                <div class="invalid-feedback">Por favor, insira um CPF válido.</div>
+                            </div>
+
+                            <div id="divCNPJ" class="d-none">
+                                <label for="cnpjVendedor" class="form-label small fw-medium text-secondary">CNPJ</label>
+                                <input type="text" class="form-control" id="cnpjVendedor" placeholder="00.000.000/0000-00" pattern="\d{2}\.\d{2}\.\d{2}\/\d{4}-\d{2}" maxlength="100">
+                                <div class="invalid-feedback">Por favor, insira um CNPJ válido.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- E-mail -->
+                        <div class="mb-3">
+                            <label for="emailRegVendedor" class="form-label small fw-medium text-secondary">E-mail Profissional</label>
+                            <input type="email" class="form-control" id="emailRegVendedor" maxlength="100" required>
+                        </div>
+
+                        <!-- Código de Aprovação -->
                         <div class="mb-3 p-3 bg-light border rounded-3 border-primary-subtle">
                             <label for="codigoAprovacao" class="form-label small fw-bold text-primary d-flex align-items-center gap-2">
                                 <i class="bi bi-shield-lock-fill"></i> Código de Autorização
                             </label>
-                            <input type="text" class="form-control border-primary text-uppercase" id="codigoAprovacao" placeholder="Ex: PRIME-2026-XYZ" required>
+                            <input type="text" class="form-control border-primary text-uppercase" id="codigoAprovacao" placeholder="Ex: PRIME-2026-XYZ" maxlength="100" required>
                             <div class="form-text small opacity-75">Insira o código de convite fornecido pela administração.</div>
                         </div>
 
@@ -51,15 +77,16 @@
                         <div class="row g-3 mb-4">
                             <div class="col-md-6">
                                 <label for="senhaRegVendedor" class="form-label small fw-medium text-secondary">Senha</label>
-                                <input type="password" class="form-control" id="senhaRegVendedor" required>
+                                <input type="password" class="form-control" id="senhaRegVendedor" maxlength="100" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="senhaConfVendedor" class="form-label small fw-medium text-secondary">Confirmar Senha</label>
-                                <input type="password" class="form-control" id="senhaConfVendedor" required>
+                                <input type="password" class="form-control" id="senhaConfVendedor" maxlength="100" required>
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-dark w-100 py-3 rounded-3">Solicitar Cadastro de Parceiro</button>
+                        <!-- Botão de Envio com Classes Corretas do Bootstrap -->
+                        <button type="submit" class="btn btn-dark w-100 mb-3">Solicitar Cadastro de Parceiro</button>
                     </form>
 
                 </div>
@@ -67,3 +94,4 @@
         </div>
     </div>
 </div>
+

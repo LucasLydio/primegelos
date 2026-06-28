@@ -17,7 +17,10 @@
   --text-primary: #0f172a;
   --text-secondary: #334155;
   --text-muted: #64748b;/* Cores base para os botões */
+  --text-blue: #0056b3;
 
+  --btn-dark: #0f172a;
+  --btn-dark-hover: #182239;
   --btn-white: #fff;
   --btn-blue: #0056b3; 
   --btn-blue-hover: #004494;
@@ -85,6 +88,14 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
 }
 
+.bg--blue {
+  background-color: var(--text-blue);
+}
+
+.text--primary {
+  color: var(--text-blue) !important;
+}
+
 /* Standard Body Text */
 p, article {
   font-size: var(--font-size-body);
@@ -96,6 +107,7 @@ p, article {
 
 a, span {
   color: var(--text-secondary);
+  text-decoration: none !important;
 }
 
 /* Interactive UI & Form Elements */

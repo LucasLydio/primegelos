@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Seja um Parceiro | Prime Gelos</title>
+    <meta name="description" content="Torne-se um parceiro de vendas da Prime Gelos. Ganhe 20% de comissão em cada pedido e gerencie seus clientes em um painel exclusivo.">
+    <meta name="theme-color" content="#0d6efd">
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+</head>
+<body>
+    <main class="main">
+        <div data-include="./layout/navbar.html"></div>
+        <div data-include="./layout/sidebar.html"></div>
+        
+        <div data-include="./components/login.html"></div>
+        <div data-include="./components/register.html"></div>
+        
+        <div data-include="./components/login-seller.html"></div>
+        <div data-include="./components/login-client.html"></div>
+        <div data-include="./components/register-client.html"></div>
+        <div data-include="./components/register-seller.html"></div>
+
+        <section class="position-relative  text-white py-5 overflow-hidden" style="min-height: 50vh; display: flex; align-items: center;">
+            <img src="/assets/img/webp/man.webp" alt="Seja um Parceiro Prime" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-50">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to right, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.4) 100%);"></div>
+            
+            <div class="container position-relative z-1 py-5">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-6">
+                        <span class="badge bg--blue bg-opacity-25 text-white px-3 py-2 rounded-pill fw-medium mb-3 border border-primary-subtle">
+                            <i class="bi bi-star-fill me-1"></i> Programa de Parceiros Prime
+                        </span>
+                        <h1 class="display-4 fw-bold mb-3 lh-sm">
+                            Transforme seus contatos em <span class="text--primary">lucro real.</span>
+                        </h1>
+                        <p class="lead text-light opacity-75 mb-4">
+                            Junte-se à melhor distribuidora de Goiânia e Anápolis. Venda gelo para eventos, bares e distribuidoras e garanta 20% de comissão em cada pedido faturado.
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row gap-3">
+                            <a href="#como-funciona" class="button btn--blue fs-5 fw-medium ">
+                                Quero ser parceiro
+                            </a>
+                            <a href="#" class="button btn--ghost fs-5 fw-medium" data-bs-toggle="modal" data-bs-target="#modalLoginVendedor">
+                                Já sou parceiro
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-dark">Por que vender com a Prime Gelos?</h2>
+                    <p class="text-muted">Oferecemos a estrutura completa para você focar apenas em fechar negócios.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 rounded-4 p-4 text-center hover-lift">
+                            <div class="bg--blue bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                                <i class="bi bi-cash-coin fs-2 text-white"></i>
+                            </div>
+                            <h4 class="fw-bold h5">20% de Comissão</h4>
+                            <p class="text-muted small mb-0">Receba uma das melhores taxas do mercado. Fechou a venda e o cliente pagou? Sua comissão está garantida.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 rounded-4 p-4 text-center hover-lift">
+                            <div class="bg-dark bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                                <i class="bi bi-phone fs-2 text-dark"></i>
+                            </div>
+                            <h4 class="fw-bold h5">Painel Exclusivo</h4>
+                            <p class="text-muted small mb-0">Acompanhe seus clientes, registre saídas, monitore status de frete e visualize seus ganhos mensais em tempo real.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 rounded-4 p-4 text-center hover-lift">
+                            <div class="bg--blue bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                                <i class="bi bi-truck fs-2 text-white"></i>
+                            </div>
+                            <h4 class="fw-bold h5">Entrega Expressa</h4>
+                            <p class="text-muted small mb-0">Não se preocupe com a logística. Nós cuidamos da separação e entrega rápida diretamente para o seu cliente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="py-5 bg-white">
+            <div class="container py-4">
+                <div class="row align-items-center g-5">
+                    
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold text-dark mb-4">Como começar?</h2>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="bg--blue text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">1</div>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="fw-bold mb-1">Solicite sua aprovação</h5>
+                                <p class="text-muted small">Entre em contato com nossa equipe comercial para uma breve avaliação de perfil.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0">
+                                <div class="bg--blue text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">2</div>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="fw-bold mb-1">Receba seu Código de Convite</h5>
+                                <p class="text-muted small">Sendo aprovado, você receberá um código exclusivo de autorização (ex: PRIME-2026).</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <div class="bg--blue text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">3</div>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="fw-bold mb-1">Cadastre-se e Venda</h5>
+                                <p class="text-muted small">Use o código para criar sua conta na plataforma e comece a registrar seus pedidos imediatamente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card border-0 rounded-4 p-4 p-lg-5 text-center">
+                            <i class="bi bi-whatsapp fs-1 text-success mb-3"></i>
+                            <h3 class="fw-bold mb-3">Fale com o Comercial</h3>
+                            <p class=" mb-4">
+                                Pronto para ser um parceiro Prime Gelos? Chame nossa equipe no WhatsApp, apresente-se e solicite seu código de acesso.
+                            </p>
+                            <a href="https://wa.me/5562999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20programa%20de%20parceiros%20da%20Prime%20Gelos." 
+                            target="_blank" class="button bg-success text-white border border-1 w-auto text-left fs-6 btn-lg  fw-medium ">
+                                <i class="bi bi-whatsapp me-2"></i> Solicitar Análise
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div data-include="./layout/footer.html"></div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./assets/js/components/include.js"></script>
+    <script type="module" src="./assets/js/components/modal.js"></script>
+</body>
+</html>

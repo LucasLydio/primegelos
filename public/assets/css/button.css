@@ -30,6 +30,16 @@
   border-color: var(--text-secondary);
 }
 
+.btn--dark {
+  background-color: var(--btn-dark);
+  color: var(--btn-white);
+  border-color: var(--btn-dark);
+}
+
+.btn--dark:hover {
+  background-color: var(--btn-dark-hover);
+  border-color: var(--btn-dark-hover);
+}
 
 .btn--blue {
   background-color: var(--btn-blue);
