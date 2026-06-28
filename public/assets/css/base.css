@@ -24,7 +24,7 @@ body {
   position: relative;
   padding-top: var(--padding-md);
   @media (max-width: 1280px) {
-      padding-inline: var(--padding-md);
+      padding-inline: var(--padding-sm);
   }
 }
 
