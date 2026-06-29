@@ -5,8 +5,21 @@
     align-items: center;
     justify-content: space-between;
     gap: var(--gap-md);
+
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.674) 40%, rgba(0, 0, 0, 0.186) 80%), 
+                      url('/assets/img/webp/ice04.webp');
+    background-size: cover;          /* Equivalente ao 'object-fit-cover' (não distorce a imagem) */
+    background-position: center;     /* Mantém o foco no centro da foto */
+    background-repeat: no-repeat;    /* Impede que a imagem se repita em telas gigantes */
+    background-attachment: scroll;   /* Pode mudar para 'fixed' se quiser efeito Parallax */
+
+
+
+
+
     .cta-hero {
-        max-width: 500px;
+        max-width: 700px;
+        color: var(--text-white);
     }
     .img-hero {
         max-width: 550px;
@@ -16,13 +29,10 @@
             box-shadow: var(--shadow-md);
         }
     }
-    @media (max-width: 1260px) {
-        justify-content: center;
-        gap: var(--gap-lg);
-        .cta-hero {
-            text-align: center;
-            max-width: 800px;
-        }
+
+    @media (max-width: 700px) {
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.674) 70%, rgba(0, 0, 0, 0.186) 100%), 
+                      url('/assets/img/webp/ice04.webp');
     }
 }
 

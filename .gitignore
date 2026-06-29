@@ -5,3 +5,5 @@ node_modules/
 .env
 netlify-dev.err.log
 netlify-dev.out.log
+read-projects.py
+structure.txt
