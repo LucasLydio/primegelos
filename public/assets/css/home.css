@@ -47,7 +47,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     background: var(--bg-white);
-    border-radius: var(--border-md);
     border: 1px solid var(--border-light);
     margin-top: 1rem;
     .feature-card {
@@ -60,7 +59,7 @@
 /* Grid responsivo automático */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.5rem;
 }
 
@@ -68,10 +67,10 @@
 .product-card {
   position: relative;
   display: block;
-  border-radius: 1rem;
+  border-radius: var(--border-md);
   overflow: hidden;
   text-decoration: none;
-  aspect-ratio: 4 / 5; /* Controla a altura da imagem (formato retrato) */
+  aspect-ratio: 5 / 4; /* Controla a altura da imagem (formato retrato) */
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
@@ -90,7 +89,7 @@
   left: 0;
   right: 0;
   padding: 2rem 1.5rem 1.5rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0) 100%);
   color: #fff;
   transition: padding-bottom 0.3s ease;
 }
